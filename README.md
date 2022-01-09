@@ -855,10 +855,6 @@ The backend can then inject the authorization code into a JavaSCript variable wh
 
 To address this issue, we recommend storing the authorization code in a server session variable and providing the Single Page Application a separate API endpoint to request the authorization code. The server, when the request is received, can then respond with the authorization code from the server session.
 
-![form_post auth code flow](./assets/img/auth_code.png)
-
-You can refer to a sample implementation using JSP [here](/samples/java-webapp).
-
 ## Storage
 
 Asgardeo allows the session information including the access token to be stored in three different places, namely,
